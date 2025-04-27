@@ -5,6 +5,9 @@ class Television:
     MAX_CHANNEL = 3
 
     def __init__(self) -> None:
+        """
+        Initializes television variables
+        """
         self.__status = False
         self.__muted = False
         self.__volume = Television.MIN_VOLUME
@@ -56,6 +59,9 @@ class Television:
 
 
     def volume_up(self) -> None:
+        """
+        Method to increase tv volume
+        """
         if self.__status:
             if self.__muted:
                 self.__muted = False
@@ -66,6 +72,9 @@ class Television:
 
 
     def volume_down(self) -> None:
+        """
+        Method to decrease tv volume
+        """
         if self.__status:
             if self.__muted:
                 self.__muted = False
